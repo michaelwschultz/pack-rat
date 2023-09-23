@@ -4,7 +4,7 @@
 event_inherited();
 
 // Set the button text
-text = "Quit";
+text = "Back";
 
 // Set the outline color
 text_outline_color = #781313;

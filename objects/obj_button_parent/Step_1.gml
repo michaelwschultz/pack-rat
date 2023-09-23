@@ -10,22 +10,19 @@ var _mouse_gui_y = device_mouse_y_to_gui(0);
 
 // Check if the mouse point is colliding with this instance (using 'id').
 // This means the mouse is hovering on the button.
-if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == id)
-{
+if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == id) {
 	// If it is, change the frame to the hover frame (1)
 	image_index = 1;
 
 	// If the left mouse button is pressed,
-	if (mouse_check_button_pressed(mb_left))
-	{
+	if (mouse_check_button_pressed(mb_left)) {
 		// Reduce the scale of the instance so it appears smaller while it's pressed
 		image_xscale = 0.9;
 		image_yscale = 0.9;
 	}
 
 	// If the left mouse button is released (which is when we register a click),
-	if (mouse_check_button_released(mb_left))
-	{
+	if (mouse_check_button_released(mb_left)) {
 		// Change the frame to the idle frame (0)
 		image_index = 0;
 		
@@ -36,15 +33,18 @@ if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == i
 		// Call User Event 0 where the button performs its actions
 		event_user(0);
 	}
-	
 }
 // If the mouse is not hovering,
-else
-{
+else {
 	// Change the frame to the idle frame (0)
 	image_index = 0;
 	
 	// Reset the scale so the button appears at its normal size
-	image_xscale = 1;
-	image_yscale = 1;
+	//image_xscale = 1;
+	//image_yscale = 1;
+	
+	// ^ Michael uncomment these
+	// TODO: this scales the image too much
+	// We can just turn this back on and use assets that are drawn at the correct size
+	// which will fix the scaling issue
 }
