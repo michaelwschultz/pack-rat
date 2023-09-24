@@ -3,28 +3,43 @@
 //and does this automatically at the start of the game
 
 // Scaling game resolution
-var base_w = 640;
-var base_h = 360;
+var base_w = 640; // 640
+var base_h = 360; // 360
 var max_w = display_get_width();
 var max_h = display_get_height();
 var aspect = display_get_width() / display_get_height();
 
-var VIEW_WIDTH = base_w;
-var VIEW_HEIGHT = base_h;
-if (max_w < max_h) {
-    // portait
-    VIEW_WIDTH = min(base_w, max_w);
-    VIEW_HEIGHT = VIEW_WIDTH / aspect;
-} else {
-    // landscape
-    VIEW_HEIGHT = min(base_h, max_h);
-    VIEW_WIDTH = VIEW_HEIGHT * aspect;
-}
+//  temp screen adjustment // ***********************
+var scale_factor = 3; // Change this to 4 for 1440p or 6 for michael's monitor
+var target_width = base_w * scale_factor;
+var target_height = base_h * scale_factor;
 
-camera_set_view_size(view_camera[0], floor(VIEW_WIDTH), floor(VIEW_HEIGHT))
-view_wport[0] = max_w;
-view_hport[0] = max_h;
-surface_resize(application_surface, view_wport[0], view_hport[0]);
+// Set the view and port to match the target resolution
+view_wport[0] = target_width;
+view_hport[0] = target_height;
+window_set_size(target_width, target_height);
+
+// Adjust the application surface size
+surface_resize(application_surface, target_width, target_height);
+
+// end temp screen adjustment // ***********************
+
+//var VIEW_WIDTH = base_w;
+//var VIEW_HEIGHT = base_h;
+//if (max_w < max_h) {
+//    // portait
+//    VIEW_WIDTH = min(base_w, max_w);
+//    VIEW_HEIGHT = VIEW_WIDTH / aspect;
+//} else {
+//    // landscape
+//    VIEW_HEIGHT = min(base_h, max_h);
+//    VIEW_WIDTH = VIEW_HEIGHT * aspect;
+//}
+
+//camera_set_view_size(view_camera[0], floor(VIEW_WIDTH), floor(VIEW_HEIGHT))
+//view_wport[0] = max_w;
+//view_hport[0] = max_h;
+//surface_resize(application_surface, view_wport[0], view_hport[0]);
 
 //// Scaling game GUI 
 //if (global.isFullscreen) {
@@ -45,16 +60,13 @@ surface_resize(application_surface, view_wport[0], view_hport[0]);
 //	display_set_gui_maximise((base_w), (base_h), 0, 0);	
 //}
 
-if (aspect > 1)
-    {
-    //landscape
+if (aspect > 1) {
+	// landscape
     display_set_gui_size(base_h * aspect, base_h);
-    }
-else
-    {
-    //portrait
+} else {
+    // portrait
     display_set_gui_size(base_w, base_w / aspect);
-    }
+}
 
 
 
