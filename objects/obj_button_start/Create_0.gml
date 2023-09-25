@@ -9,5 +9,3 @@ text = "Play";
 // Set the outline color
 text_outline_color = #185017;
 
-
-

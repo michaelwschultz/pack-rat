@@ -1,17 +1,17 @@
 /// Script Functions
 
-/// @description Is used by a sequence to lock the menu
-function menu_lock_on()
+/// @description Is used by a sequence to lock the player movement
+function lock_movement()
 {
-	// Set the global.menu_lock to true in order to prevent interacting with certain objects
-	global.menu_lock = true;
+	// Set the global.movement_locked to true in order to prevent interacting with certain objects
+	global.movement_locked = true;
 }
 
 /// @description Is used by a sequence to unlock the menu
-function menu_lock_off()
+function unlock_movement()
 {
-	// Set the global.menu_lock to false so buttons can be interacted with again
-	global.menu_lock = false;
+	// Set the global.movement_locked to false so buttons can be interacted with again
+	global.movement_locked = false;
 }
 
 /// @description Creates an icon for the popup menu
@@ -125,7 +125,7 @@ function set_game_over()
 	game_over = true;
 	
 	// Lock the menu so we can't interact with the game any more
-	global.menu_lock = true;
+	lock_movement()
 	
 	// Destroy any current buttons
 	instance_destroy(obj_button_parent);

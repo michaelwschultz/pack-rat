@@ -7,3 +7,5 @@
 // reset event
 event_played = false;
 show_debug_message("player arrived at " + object_name)
+
+run_interaction()

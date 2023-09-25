@@ -2,6 +2,11 @@
 // TODO: write script that goes through each room
 //and does this automatically at the start of the game
 
+// TODO: re-enable this once I've moved the persistent_manager
+// to the menu screen only, to keep track of the previous room.
+//global.previous_room = room.id;
+
+
 // Scaling game resolution
 var base_w = 640; // 640
 var base_h = 360; // 360
@@ -67,7 +72,3 @@ if (aspect > 1) {
     // portrait
     display_set_gui_size(base_w, base_w / aspect);
 }
-
-
-
-
