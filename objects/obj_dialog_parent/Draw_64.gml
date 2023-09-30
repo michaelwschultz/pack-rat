@@ -12,7 +12,7 @@ if(showing_dialog == true) {
 	if(sprite_get_height(current_dialog.sprite) > height) {
 		height = sprite_get_height(current_dialog.sprite);
 	}
-	
+
 	height += padding * 2;
 	text_x = sprite_get_width(current_dialog.sprite) + (padding * 2);
 	
