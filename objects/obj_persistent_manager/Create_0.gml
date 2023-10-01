@@ -5,7 +5,6 @@ if (!variable_global_exists("game_started")) {
 	
 	global.isFullscreen = false;
 
-
 	// This variable tells you whether or not a popup menu currently exists
 	global.popup_menu_exists = false;
 
@@ -22,6 +21,8 @@ if (!variable_global_exists("game_started")) {
 
 	// This variable tells us which room was visited last
 	global.previous_room = -1;
+	
+	global.current_tool = -1;
 
 	// Cursor setup
 	// Turn off drawing the default cursor
@@ -34,7 +35,7 @@ if (!variable_global_exists("game_started")) {
 	global.fnt_symbol_note = "\u0153";
 	global.fnt_symbol_heart = "\u0152";
 
-	global.room_start_x_location = 0;
-	global.room_start_y_location = 0;
+	global.room_start_x_location = 300;
+	global.room_start_y_location = 280;
 	global.room_start_facing_left = false;
 }

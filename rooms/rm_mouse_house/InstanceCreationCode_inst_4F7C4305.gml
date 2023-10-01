@@ -1,1 +1,0 @@
-next_room = rm_human_house;

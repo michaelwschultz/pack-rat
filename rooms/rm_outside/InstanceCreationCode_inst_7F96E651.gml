@@ -1,0 +1,1 @@
+next_room = rm_tree_house;

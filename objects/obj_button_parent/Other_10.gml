@@ -5,4 +5,3 @@
 */
 
 // Give movement back to player
-unlock_movement()

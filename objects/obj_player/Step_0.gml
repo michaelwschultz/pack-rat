@@ -27,14 +27,12 @@ if (!global.movement_locked) {
 		}
 	}
 
-
-	if (moving) {
+	if (moving and !global.movement_locked) {
 		if (target_x and target_y) {
 			var distance = point_distance(x, y, target_x, target_y);
 			var moveX = lerp(x, target_x, movement_speed / distance);
 			var moveY = lerp(y, target_y, movement_speed / distance);
 	
-			// TODO: why does this only work once then the player get's stuck in moving
 			if (!place_meeting(moveX, moveY, [obj_obstacle_parent, obj_interactive_parent])) {	
 				if (distance > min_pixel_distance) {
 					x = moveX;
@@ -43,6 +41,7 @@ if (!global.movement_locked) {
 					moving = false;	
 				}
 			} else {
+				// TODO: rather than stopping, continue to move past obstacle by sliding against it.
 				moving = false;	
 			}
 		}

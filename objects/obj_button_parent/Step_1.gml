@@ -13,13 +13,13 @@ var _mouse_gui_y = device_mouse_y_to_gui(0);
 if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == id) {
 	// If it is, change the frame to the hover frame (1)
 	image_index = 1;
+	lock_movement()
 
 	// If the left mouse button is pressed,
 	if (mouse_check_button_pressed(mb_left)) {
 		// Reduce the scale of the instance so it appears smaller while it's pressed
 		//image_xscale = 0.9;
 		//image_yscale = 0.9;
-		lock_movement()
 	}
 
 	// If the left mouse button is released (which is when we register a click),
@@ -37,6 +37,7 @@ if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == i
 }
 // If the mouse is not hovering,
 else {
+	unlock_movement()
 	// Change the frame to the idle frame (0)
 	image_index = 0;
 	

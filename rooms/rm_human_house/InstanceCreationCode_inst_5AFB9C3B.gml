@@ -1,1 +1,0 @@
-next_room = rm_mouse_house;
