@@ -1,3 +1,6 @@
 /// @description Insert description here
 
-hovering = true;
+if (!hovering) {
+	hovering = true;
+	layer_add_instance("Instances_outlined", id);
+}

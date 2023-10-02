@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_player_walk",
-  "bbox_bottom": 60,
+  "bbox_bottom": 58,
   "bbox_left": 11,
   "bbox_right": 42,
   "bbox_top": 43,

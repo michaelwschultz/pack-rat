@@ -31,10 +31,14 @@ if (object_exists(obj_inventory_button)) {
 }
 
 
-
-
-
-
-
-
-
+if (object_exists(obj_notes)) {
+	for (var i = 0; i < array_length(notes); i++) {
+		var _xx =  485;
+		var _yy = 387;
+		var _gap = item_gap;
+		var _color = red_color;
+		var _sprite = notes[i].sprite;
+		
+		draw_sprite_ext(_sprite, 0, _xx + _gap * i, _yy, 1, 1, image_angle, image_blend, 1);
+	}
+}

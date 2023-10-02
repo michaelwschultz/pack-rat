@@ -1,4 +1,6 @@
 /// @description Insert description here
+
+
 if (clicked and !event_played) {
 	
 	// set a timer to clear this event if the player doesn't reach the object in time
@@ -7,6 +9,7 @@ if (clicked and !event_played) {
 		timer_set = true;
 	}
 	
+	// TODO: this doesn't seem to always work reliably
 	player_distance = round(point_distance(x, y, obj_player.x, obj_player.y));
 	
 	if (!obj_player.moving and player_distance < 100) {

@@ -2,6 +2,7 @@
 
 if (!variable_global_exists("game_started")) {
 	global.game_started = true;
+	global.game_over = false;
 	
 	//play background music
 	// TODO: play music
@@ -28,6 +29,8 @@ if (!variable_global_exists("game_started")) {
 	
 	global.current_tool = -1;
 	
+	global.combination = [0, 0, 0];
+
 
 	// Cursor setup
 	// Turn off drawing the default cursor

@@ -1,6 +1,7 @@
 /// @description Insert description here
 
 if (!moving or global.movement_locked) {
+	sprite_index = spr_player_idle;
 	sprite_set_speed(spr_player_walk, 0, false);
 	image_index = 0;
 	// reset target so player stops moving
@@ -8,6 +9,7 @@ if (!moving or global.movement_locked) {
 	target_x = NaN;
 	target_y = NaN;
 } else {
+	sprite_index = spr_player_walk;
 	sprite_set_speed(spr_player_walk, 6, false);
 	image_speed = 1;
 }
@@ -30,6 +32,7 @@ if (!global.movement_locked) {
 	}
 
 	if (moving and !global.movement_locked) {
+		sprite_index = spr_player_walk;
 		if (target_x and target_y) {
 			var distance = point_distance(x, y, target_x, target_y);
 			var moveX = lerp(x, target_x, movement_speed / distance);

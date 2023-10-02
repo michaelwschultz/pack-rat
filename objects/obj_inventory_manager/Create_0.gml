@@ -61,8 +61,39 @@ global.inventory_list = {
 	)
 }
 
-// build inventory
+global.notes_list = {
+	first: new create_item(
+		"4",
+		"flower pot",
+		spr_number_flower_pot,
+		function() {
+			instance_create_layer(0, 0, "Instances_static", obj_dialog_found_number);
+		},
+		function() {}
+	),
+	second: new create_item(
+		"7",
+		"gundam head",
+		spr_number_gundam,
+		function() {
+			instance_create_layer(0, 0, "Instances_static", obj_dialog_found_number);
+		},
+		function() {}
+	),
+	thrid: new create_item(
+		"2",
+		"floor board",
+		spr_number_floor_board,
+		function() {
+			instance_create_layer(0, 0, "Instances_static", obj_dialog_found_number);
+		},
+		function() {}
+	),
+	
+}
+
 inventory = array_create(0);
+notes = array_create(0);
 
 //EXAMPLE: how we add items to the inventory
 //array_push(inventory, global.inventory_list.key)

@@ -1,3 +1,6 @@
 /// @description Insert description here
 
-hovering = false;
+if (hovering) {
+	hovering = false;
+	layer_add_instance("Instances_interact", id);
+}
