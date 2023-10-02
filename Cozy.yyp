@@ -106,6 +106,7 @@
     {"id":{"name":"spr_tool_gundam","path":"sprites/spr_tool_gundam/spr_tool_gundam.yy",},},
     {"id":{"name":"obj_popup_pause","path":"objects/obj_popup_pause/obj_popup_pause.yy",},},
     {"id":{"name":"obj_room_manager","path":"objects/obj_room_manager/obj_room_manager.yy",},},
+    {"id":{"name":"mouse_house_bgm","path":"sounds/mouse_house_bgm/mouse_house_bgm.yy",},},
     {"id":{"name":"spr_cozy_game_jam","path":"sprites/spr_cozy_game_jam/spr_cozy_game_jam.yy",},},
     {"id":{"name":"spr_cozy_autumn_palette","path":"sprites/spr_cozy_autumn_palette/spr_cozy_autumn_palette.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},

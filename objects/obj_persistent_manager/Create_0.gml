@@ -3,6 +3,10 @@
 if (!variable_global_exists("game_started")) {
 	global.game_started = true;
 	
+	//play background music
+	// TODO: play music
+	//audio_play_sound(mouse_house_bgm, 100, true, 0.3);
+	
 	global.isFullscreen = false;
 
 	// This variable tells you whether or not a popup menu currently exists
@@ -23,6 +27,7 @@ if (!variable_global_exists("game_started")) {
 	global.previous_room = -1;
 	
 	global.current_tool = -1;
+	
 
 	// Cursor setup
 	// Turn off drawing the default cursor
