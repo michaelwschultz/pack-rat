@@ -16,4 +16,8 @@ if (array_length(global.notes_list) == 1) {
 	dialog.add(spr_avatar, "Maybe I left another hint near the chest in my room.");
 }
 
+function do_after() {
+	obj_inventory_button.is_open = true;
+}
+
 

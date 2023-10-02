@@ -117,7 +117,6 @@
     {"name":"obj_inventory_slot","order":1,"path":"objects/obj_inventory_slot/obj_inventory_slot.yy",},
     {"name":"spr_tool_grapple","order":5,"path":"sprites/spr_tool_grapple/spr_tool_grapple.yy",},
     {"name":"obj_dialog_pickup_hammer","order":4,"path":"objects/obj_dialog_pickup_hammer/obj_dialog_pickup_hammer.yy",},
-    {"name":"obj_dialog_pickup_hammer48","order":7,"path":"objects/obj_dialog_pickup_hammer48/obj_dialog_pickup_hammer48.yy",},
     {"name":"obj_click_to_continue","order":7,"path":"objects/obj_click_to_continue/obj_click_to_continue.yy",},
     {"name":"spr_pack_rat_logo","order":8,"path":"sprites/spr_pack_rat_logo/spr_pack_rat_logo.yy",},
     {"name":"rm_game_over","order":5,"path":"rooms/rm_game_over/rm_game_over.yy",},

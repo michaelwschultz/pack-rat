@@ -154,7 +154,6 @@
     {"id":{"name":"spr_world_key","path":"sprites/spr_world_key/spr_world_key.yy",},},
     {"id":{"name":"spr_treehouse_rug","path":"sprites/spr_treehouse_rug/spr_treehouse_rug.yy",},},
     {"id":{"name":"obj_dialog_pickup_hammer","path":"objects/obj_dialog_pickup_hammer/obj_dialog_pickup_hammer.yy",},},
-    {"id":{"name":"obj_dialog_pickup_hammer48","path":"objects/obj_dialog_pickup_hammer48/obj_dialog_pickup_hammer48.yy",},},
     {"id":{"name":"obj_click_to_continue","path":"objects/obj_click_to_continue/obj_click_to_continue.yy",},},
     {"id":{"name":"obj_combination_chest_popup","path":"objects/obj_combination_chest_popup/obj_combination_chest_popup.yy",},},
     {"id":{"name":"spr_pack_rat_logo","path":"sprites/spr_pack_rat_logo/spr_pack_rat_logo.yy",},},
