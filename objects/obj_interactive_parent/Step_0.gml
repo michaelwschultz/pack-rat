@@ -1,8 +1,6 @@
 /// @description Insert description here
 
-
 if (clicked and !event_played) {
-	
 	// set a timer to clear this event if the player doesn't reach the object in time
 	if ( !timer_set) {
 		alarm[0] = 60 * 10; // fps * 10  = 10 seconds

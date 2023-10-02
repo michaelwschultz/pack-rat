@@ -5,8 +5,6 @@
 event_inherited();
 
 // Set the font 
-// TODO: LUKE add custom font
-//draw_set_font(ft_button);
 draw_set_font(fnt_press_start);
 
 // Set the horizontal and verticle alignment of the text

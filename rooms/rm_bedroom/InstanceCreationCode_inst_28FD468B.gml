@@ -6,6 +6,4 @@ function run_interaction() {
 	if (global.combination[combination_index] >= 10) {
 		global.combination[combination_index] = 0
 	}
-	
-	show_debug_message(global.combination)
 }

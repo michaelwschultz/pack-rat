@@ -10,7 +10,7 @@ player_distance = NaN;
 
 
 // Set depth based on its y value
-depth = -y;
+//depth = -y;
 
 
 // This function should be overriden inside the instance create code

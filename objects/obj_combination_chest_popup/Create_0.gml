@@ -1,5 +1,5 @@
 /// @description Insert description here
-combination = [2,7,4];
+combination = [4,7,2];
 
 
 

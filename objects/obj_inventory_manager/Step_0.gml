@@ -7,7 +7,7 @@ for (var i = 0; i < array_length(inventory); i++) {
 	
 	// add a gap after the first item
 	if (i > 0) {
-		_xx += item_gap;
+		_xx += (item_gap * i);
 	}
 	
 	if (mouse_x > _xx - 10 and mouse_x < _xx + 25 and mouse_y > _yy and mouse_y < _yy + 30) {
@@ -15,10 +15,12 @@ for (var i = 0; i < array_length(inventory); i++) {
 	}
 }
 
-if (selected_item != -1) {
-	if (mouse_check_button_pressed(mb_left)) {
-		show_debug_message("used your " + inventory[selected_item].name);
-		inventory[selected_item].on_use();
+if(selected_item != -1) {
+	if(object_exists(obj_inventory_button) and obj_inventory_button.is_open) {
+		if (mouse_check_button_pressed(mb_left)) {
+			show_debug_message("selected your " + inventory[selected_item].name);
+			inventory[selected_item].on_use();
+		}
 	}
 }
 

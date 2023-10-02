@@ -10,13 +10,11 @@
 // Scaling game resolution
 var base_w = 640; // 640
 var base_h = 360; // 360
-var max_w = display_get_width();
-var max_h = display_get_height();
 var aspect = display_get_width() / display_get_height();
 
 //  temp screen adjustment // ***********************
-// TODO: remove this before submitting to itch
-var scale_factor = 3; // Change this to 4 for 1440p or 6 for michael's monitor
+// TODO: change to 1 before submitting to itch
+var scale_factor = 1; // Change this to 4 for 1440p or 6 for michael's monitor
 var target_width = base_w * scale_factor;
 var target_height = base_h * scale_factor;
 

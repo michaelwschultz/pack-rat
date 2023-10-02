@@ -3,61 +3,75 @@
 selected_item = -1;
 item_start_y_position = 200;
 screen_border = 20;
-item_gap = 60;
+item_gap = 55;
 average_item_height = 25;
 red_color = make_colour_rgb(172, 68, 39);
 red_color_highlight = make_colour_rgb(239, 101, 68);
 
-function create_item(_name, _description, _sprite, _on_collect, _on_use) constructor {
+function create_item(_name, _description, _sprite, _on_collect, _on_use,  _inventory_sprite) constructor {
 	name = _name;
 	description = _description;
 	sprite = _sprite;
 	on_collect = _on_collect;
 	on_use = _on_use;
+	inventory_sprite = _inventory_sprite;
 }
 
 global.inventory_list = {
 	key: new create_item(
 		"key",
 		"Used to unlock something.",
-		spr_tool_key,
+		spr_world_key,
 		function() {
 			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_key);
 		},
 		function() {
 			global.current_tool = selected_item;
-			cursor_sprite = inventory[selected_item].sprite;
+			cursor_sprite = inventory[selected_item].inventory_sprite;
 			//array_delete(inventory, selected_item, 1);  // remove the item
-		}
+		},
+		spr_tool_key
 	),
 	gundam_head: new create_item(
-		 "helmet",
-		 "I've been looking for this!",
-		 spr_tool_gundam,
-		 function() {
-			
-		},
-		function() {
-			
-		},
-	),
-	hammer: new create_item(
-		"hammer",
-		 "Used to build things, or tear them down.",
-		spr_tool_hammer,
+		"helmet",
+		"I've been looking for this!",
+		spr_tool_gundam,
 		function() {
 			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_hammer);
 		},
 		function() {
 			global.current_tool = selected_item;
-			cursor_sprite = inventory[selected_item].sprite;
+			cursor_sprite = inventory[selected_item].inventory_sprite;
 			//array_delete(inventory, selected_item, 1); // remove the item
 		}
+	),
+	hammer: new create_item(
+		"hammer",
+		 "Used to build things, or tear them down.",
+		spr_world_hammer,
+		function() {
+			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_hammer);
+		},
+		function() {
+			global.current_tool = selected_item;
+			cursor_sprite = inventory[selected_item].inventory_sprite;
+			//array_delete(inventory, selected_item, 1); // remove the item
+		},
+		spr_tool_hammer
 	),
 	grapple: new create_item(
 		"grapple",
 		"Used to get to high places.",
-		spr_tool_grapple,
+		spr_world_grapple,
+		function() {
+			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_grapple);
+		},
+		function() {
+			global.current_tool = selected_item;
+			cursor_sprite = inventory[selected_item].inventory_sprite;
+			//array_delete(inventory, selected_item, 1); // remove the item
+		},
+		spr_tool_grapple
 	)
 }
 
