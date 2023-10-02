@@ -4,3 +4,14 @@
 event_inherited();
 
 item = global.inventory_list.hammer;
+
+
+
+
+
+
+
+
+
+
+

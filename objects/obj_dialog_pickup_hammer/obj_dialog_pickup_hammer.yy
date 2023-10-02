@@ -1,22 +1,19 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_interactive_tool",
+  "name": "obj_dialog_pickup_hammer",
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":10,"eventType":7,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Elements",
-    "path": "folders/Objects/Elements.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
-    "name": "obj_interactive_parent",
-    "path": "objects/obj_interactive_parent/obj_interactive_parent.yy",
+    "name": "obj_dialog_parent",
+    "path": "objects/obj_dialog_parent/obj_dialog_parent.yy",
   },
   "persistent": false,
   "physicsAngularDamping": 0.1,
@@ -33,10 +30,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_tool_key",
-    "path": "sprites/spr_tool_key/spr_tool_key.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

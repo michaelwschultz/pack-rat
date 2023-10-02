@@ -9,7 +9,7 @@ if (clicked and !event_played) {
 	
 	player_distance = round(point_distance(x, y, obj_player.x, obj_player.y));
 	
-	if (!obj_player.moving and player_distance < 50) {
+	if (!obj_player.moving and player_distance < 100) {
 		event_played = true;
 		clicked = false;
 		timer_set = false;

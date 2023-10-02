@@ -13,7 +13,7 @@ var _mouse_gui_y = device_mouse_y_to_gui(0);
 if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == id) {
 	// If it is, change the frame to the hover frame (1)
 	if (is_open) {
-		image_index = 3;
+		image_index = 3; // x button hover state
 		
 		// remove current tool and replace cursor
 		global.current_tool = -1;
@@ -43,8 +43,8 @@ if (collision_point(_mouse_gui_x, _mouse_gui_y, object_index, false, false) == i
 else {
 	// Change the frame to the idle frame (0)
 	if (is_open) {
-		image_index = 2;
+		image_index = 2;  // x button
 	} else {
-		image_index = 0;	
+		image_index = 0;
 	}
 }

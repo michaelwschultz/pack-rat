@@ -9,4 +9,3 @@ event_played = false;
 show_debug_message("player arrived at " + item.name)
 
 run_interaction()
-

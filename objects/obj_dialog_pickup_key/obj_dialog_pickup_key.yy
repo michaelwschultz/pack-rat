@@ -1,15 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_dialog_touch_safe",
+  "name": "obj_dialog_pickup_key",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Safe",
-    "path": "folders/Objects/Dialog/Human House/Safe.yy",
+    "name": "Dialog",
+    "path": "folders/Objects/Dialog.yy",
   },
   "parentObjectId": {
     "name": "obj_dialog_parent",

@@ -14,7 +14,9 @@ if (!moving or global.movement_locked) {
 
 // Move player to clicked target
 if (!global.movement_locked) {
-	if (device_mouse_check_button_pressed(0, mb_left) or device_mouse_check_button(0, mb_left)) {
+	//NOTE: add this back if we want to be able to hold the button
+	//device_mouse_check_button(0, mb_left)
+	if (device_mouse_check_button_pressed(0, mb_left)) {
 		target_x = mouse_x;
 		target_y = mouse_y;
 		moving = true;
