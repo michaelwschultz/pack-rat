@@ -4,8 +4,8 @@ function item_add(_item){
 	array_push(obj_inventory_manager.inventory, _item);
 }
 
-function note_add(_item){
-	array_push(obj_inventory_manager.notes, _item);
+function note_add(_note){
+	array_push(obj_inventory_manager.notes, _note);
 }
 
 // TODO: add a way to remove these

@@ -2,7 +2,7 @@
 
 var link = "https://twitch.tv/tokorokogame";
 
-url_open(link);
+url_open_ext(link, "_blank");
 
 
 

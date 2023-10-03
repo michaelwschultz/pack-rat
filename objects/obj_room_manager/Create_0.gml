@@ -6,6 +6,8 @@
 // to the menu screen only, to keep track of the previous room.
 //global.previous_room = room.id;
 
+// Clear the mouse state in-case the player is still holding down left click
+mouse_clear(mb_left)
 
 // Scaling game resolution
 var base_w = 640; // 640
@@ -25,44 +27,6 @@ window_set_size(target_width, target_height);
 
 // Adjust the application surface size
 surface_resize(application_surface, target_width, target_height);
-
-// end temp screen adjustment // ***********************
-
-//var VIEW_WIDTH = base_w;
-//var VIEW_HEIGHT = base_h;
-//if (max_w < max_h) {
-//    // portait
-//    VIEW_WIDTH = min(base_w, max_w);
-//    VIEW_HEIGHT = VIEW_WIDTH / aspect;
-//} else {
-//    // landscape
-//    VIEW_HEIGHT = min(base_h, max_h);
-//    VIEW_WIDTH = VIEW_HEIGHT * aspect;
-//}
-
-//camera_set_view_size(view_camera[0], floor(VIEW_WIDTH), floor(VIEW_HEIGHT))
-//view_wport[0] = max_w;
-//view_hport[0] = max_h;
-//surface_resize(application_surface, view_wport[0], view_hport[0]);
-
-//// Scaling game GUI 
-//if (global.isFullscreen) {
-//	if (aspect > 1) {
-//	    // landscape
-//	    ww = base_h * aspect;
-//	    hh = base_h;
-//	    display_set_gui_maximise((max_w / ww), (max_h / hh), 0, 0);
-	
-//		show_debug_message("camera - "  +  string(max_w / ww) + " " + string(max_h / hh))
-//	} else {
-//	    // portrait
-//	    ww = base_w;
-//	    hh = base_w / aspect;
-//	    display_set_gui_maximise((max_w / ww), (max_h / hh), 0, 0);
-//	}
-//} else {
-//	display_set_gui_maximise((base_w), (base_h), 0, 0);	
-//}
 
 if (aspect > 1) {
 	// landscape

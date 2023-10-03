@@ -11,6 +11,7 @@ if(showing_dialog == false) {
 	current_dialog = dialog.pop();
 	showing_dialog = true;
 	lock_movement();
+	
 } else {
 	if(mouse_check_button_pressed(key_next)) {
 		showing_dialog = false;

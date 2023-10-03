@@ -37,7 +37,7 @@ global.inventory_list = {
 		"I've been looking for this!",
 		spr_tool_gundam,
 		function() {
-			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_hammer);
+			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_gundam);
 		},
 		function() {
 			global.current_tool = selected_item;
@@ -63,9 +63,7 @@ global.inventory_list = {
 		"grapple",
 		"Used to get to high places.",
 		spr_world_grapple,
-		function() {
-			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_grapple);
-		},
+		function() {},
 		function() {
 			global.current_tool = selected_item;
 			cursor_sprite = inventory[selected_item].inventory_sprite;

@@ -2,8 +2,8 @@
 
 global.game_over = false;
 
-//play background music
-audio_play_sound(mouse_house_bgm, 100, true, 0.3);
+////play background music
+//audio_play_sound(mouse_house_bgm, 100, true, 0.3);
 	
 global.isFullscreen = false;
 
@@ -34,5 +34,5 @@ global.fnt_symbol_note = "\u0153";
 global.fnt_symbol_heart = "\u0152";
 
 global.room_start_x_location = 300;
-global.room_start_y_location = 280;
+global.room_start_y_location = 300;
 global.room_start_facing_left = false;
