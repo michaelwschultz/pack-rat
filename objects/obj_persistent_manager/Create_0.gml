@@ -24,6 +24,7 @@ global.combination = [0, 0, 0];
 // This is the dumbest thing I've ever had
 // to do but I couldn't find another way and I'm tired.
 global.grapple_is_going_up = true;
+global.grapple_is_first_time_outside = true;
 
 
 // Cursor setup

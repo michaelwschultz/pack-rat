@@ -1,5 +1,11 @@
 /// @description Insert description here
 
+// NOTE: this is super important or the game crashes when you when
+// still not sure why this happens
+if (global.game_over) {
+	exit;
+}
+
 draw_set_font(fnt_press_start);
 
 if (object_exists(obj_inventory_button)) {
@@ -12,6 +18,10 @@ if (object_exists(obj_inventory_button)) {
 	
 		var _alpha = 1;
 	
+		//TODO: should use the name instead of the index
+		// HUGE learning is to not rely on the order of arrays to
+		// infer things. We should always be passing around the
+		// full inventory. You never know when it's going to be useful.
 		if (global.current_tool == i) {
 			_alpha = 0.5;
 		}

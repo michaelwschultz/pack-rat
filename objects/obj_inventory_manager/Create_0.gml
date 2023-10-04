@@ -1,5 +1,7 @@
 /// @description Insert description here
 
+global.picked_up_items = array_create(0);
+
 selected_item = -1;
 item_start_y_position = 200;
 screen_border = 20;
@@ -24,6 +26,8 @@ global.inventory_list = {
 		spr_world_key,
 		function() {
 			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_key);
+			// TODO: this is dumb
+			array_push(global.picked_up_items, "key");
 		},
 		function() {
 			global.current_tool = selected_item;
@@ -38,6 +42,7 @@ global.inventory_list = {
 		spr_tool_gundam,
 		function() {
 			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_gundam);
+			array_push(global.picked_up_items, "gundam_head");
 		},
 		function() {
 			global.current_tool = selected_item;
@@ -51,6 +56,7 @@ global.inventory_list = {
 		spr_world_hammer,
 		function() {
 			instance_create_layer(0, 0, "Instances_static", obj_dialog_pickup_hammer);
+			array_push(global.picked_up_items, "hammer");
 		},
 		function() {
 			global.current_tool = selected_item;

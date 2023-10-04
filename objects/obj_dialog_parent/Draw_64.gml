@@ -38,53 +38,60 @@ if(showing_dialog == true) {
 	var mx = (window_mouse_get_x()/window_get_width()) * display_get_gui_width();
 	var my = (window_mouse_get_y()/window_get_height()) * display_get_gui_height();
 
+	// TODO: this is a really weird place to have these
 	// Actions
-	if (current_dialog.first_action) {
-		// Get the width of each option
-		var first_option = "climb";
-		var first_option_width = string_width(first_option);
 	
-		// Check if the mouse is hoving over each option
-		var is_hovering_first_option = point_in_rectangle(mx, my, text_x,  text_y + 35, text_x + first_option_width,  text_y + 60);
-	
-		if (is_hovering_first_option) {
-			draw_set_color(red_color_highlight);
-		} else {
-			draw_set_color(red_color);
-		}
-		draw_text_ext(text_x, text_y + 40, first_option, 14, display_get_gui_width() - 192);
+	// If there is only one action, just run it
+	if (current_dialog.first_action and !current_dialog.second_action) {
+		current_dialog.first_action();
 		
-		if (mouse_check_button_pressed(mb_left)) {	
+	} else {
+		if (current_dialog.first_action) {
+			// Get the width of each option
+			var first_option = "climb";
+			var first_option_width = string_width(first_option);
+	
+			// Check if the mouse is hoving over each option
+			var is_hovering_first_option = point_in_rectangle(mx, my, text_x,  text_y + 35, text_x + first_option_width,  text_y + 60);
+	
 			if (is_hovering_first_option) {
-				current_dialog.first_action();
-				showing_dialog = false;
-				alpha = 0;
-			} 
-		}
-	}
-
-	if (current_dialog.second_action) {
-		var second_option = "pickup";
-		var second_option_width = string_width(second_option);
-	
-		var is_hovering_second_option = point_in_rectangle(mx, my, text_x + first_option_width + 16,  text_y + 35, text_x + first_option_width + 16 + second_option_width,  text_y + 60);
-	
-		if (is_hovering_second_option) {
-			draw_set_color(red_color_highlight);
-		} else {
-			draw_set_color(red_color);
-		}
-		draw_text_ext(text_x + first_option_width + 16, text_y + 40, second_option, 14, display_get_gui_width() - 192);
+				draw_set_color(red_color_highlight);
+			} else {
+				draw_set_color(red_color);
+			}
+			draw_text_ext(text_x, text_y + 40, first_option, 14, display_get_gui_width() - 192);
 		
-		if (mouse_check_button_pressed(mb_left)) {	
+			if (mouse_check_button_pressed(mb_left)) {	
+				if (is_hovering_first_option) {
+					current_dialog.first_action();
+					showing_dialog = false;
+					alpha = 0;
+				} 
+			}
+		}
+
+		if (current_dialog.second_action) {
+			var second_option = "pickup";
+			var second_option_width = string_width(second_option);
+	
+			var is_hovering_second_option = point_in_rectangle(mx, my, text_x + first_option_width + 16,  text_y + 35, text_x + first_option_width + 16 + second_option_width,  text_y + 60);
+	
 			if (is_hovering_second_option) {
-				current_dialog.second_action();
-				showing_dialog = false;
-				alpha = 0;
-			} 
+				draw_set_color(red_color_highlight);
+			} else {
+				draw_set_color(red_color);
+			}
+			draw_text_ext(text_x + first_option_width + 16, text_y + 40, second_option, 14, display_get_gui_width() - 192);
+		
+			if (mouse_check_button_pressed(mb_left)) {	
+				if (is_hovering_second_option) {
+					current_dialog.second_action();
+					showing_dialog = false;
+					alpha = 0;
+				} 
+			}
 		}
 	}
-
 	// reset color
 	draw_set_color(c_white);
 	

@@ -9,10 +9,3 @@ if (is_equal and !global.game_over) {
 
 
 
-
-
-
-
-
-
-
