@@ -8,6 +8,7 @@ obj_inventory_combo_slot.y = move_distance + 15;
 distance_to_apply = lerp(distance_to_apply,  distance, slide_speed)
 
 if (is_open) {
+	lock_movement()
 	obj_notes.y = move_distance - 10;
 	distance = 65;
 } else {

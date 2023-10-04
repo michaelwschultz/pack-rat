@@ -1,12 +1,10 @@
 /// @description Interactive Parent
 
-object_name = object_get_name(object_index);
-
 hovering = false;
 pickup_distance = 10;
 
 // Set depth based on its y value
-//depth = -y;
+// depth = -y;
 
 
 // This function should be overriden inside the instance create code

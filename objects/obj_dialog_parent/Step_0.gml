@@ -13,7 +13,7 @@ if(showing_dialog == false) {
 	lock_movement();
 	
 } else {
-	if(mouse_check_button_pressed(key_next)) {
+	if(mouse_check_button_pressed(key_next) and !current_dialog.first_action) {
 		showing_dialog = false;
 		alpha = 0;
 	}

@@ -9,15 +9,3 @@ if (os_browser != browser_not_a_browser) {
 	    window_set_size(display_get_width(),display_get_height());
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-

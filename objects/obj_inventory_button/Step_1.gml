@@ -45,6 +45,7 @@ else {
 	if (is_open) {
 		image_index = 2;  // x button
 	} else {
+		
 		image_index = 0;
 	}
 }

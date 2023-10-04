@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_treehouse_rug",
-  "eventList": [],
+  "name": "obj_event_place_grapple",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Treehouse",
-    "path": "folders/Objects/Elements/Treehouse.yy",
+    "name": "Elements",
+    "path": "folders/Objects/Elements.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,10 +27,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_treehouse_rug",
-    "path": "sprites/spr_treehouse_rug/spr_treehouse_rug.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

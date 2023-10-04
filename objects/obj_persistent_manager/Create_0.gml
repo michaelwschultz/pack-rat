@@ -21,6 +21,10 @@ global.current_tool = -1;
 	
 global.combination = [0, 0, 0];
 
+// This is the dumbest thing I've ever had
+// to do but I couldn't find another way and I'm tired.
+global.grapple_is_going_up = true;
+
 
 // Cursor setup
 // Turn off drawing the default cursor
