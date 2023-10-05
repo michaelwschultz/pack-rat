@@ -25,10 +25,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "spr_inventory_combo_slot",
-    "path": "sprites/spr_inventory_combo_slot/spr_inventory_combo_slot.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

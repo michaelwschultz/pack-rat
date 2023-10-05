@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "spr_tool_hammer",
   "bbox_bottom": 43,
-  "bbox_left": 0,
-  "bbox_right": 30,
+  "bbox_left": 9,
+  "bbox_right": 39,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7fbc51f2-115b-4517-aa19-be18a34bc1b5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"c4ae4fc8-7f10-4d73-9fae-d09f044fc79a",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 44,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d61637c1-1dc1-456b-8809-b9a827bee3dd","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"18872170-9ce2-47be-b0fe-f24159984eb8","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"7fbc51f2-115b-4517-aa19-be18a34bc1b5","path":"sprites/spr_tool_hammer/spr_tool_hammer.yy",},},},"Disabled":false,"id":"745f1468-4b86-4678-b863-60f9732cdfaa","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"c4ae4fc8-7f10-4d73-9fae-d09f044fc79a","path":"sprites/spr_tool_hammer/spr_tool_hammer.yy",},},},"Disabled":false,"id":"020eda6c-1f2d-4c1d-b264-159b07bf107c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 31,
+  "width": 48,
 }

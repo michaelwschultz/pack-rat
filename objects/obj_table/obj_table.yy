@@ -9,10 +9,7 @@
     "name": "Hallway",
     "path": "folders/Objects/Elements/Hallway.yy",
   },
-  "parentObjectId": {
-    "name": "obj_interactive_parent",
-    "path": "objects/obj_interactive_parent/obj_interactive_parent.yy",
-  },
+  "parentObjectId": null,
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,

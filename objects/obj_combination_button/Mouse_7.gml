@@ -3,4 +3,6 @@
 
 image_index = 0;
 
-run_interaction()
+if (layer_get_visible(layer)) {
+	run_interaction()
+}

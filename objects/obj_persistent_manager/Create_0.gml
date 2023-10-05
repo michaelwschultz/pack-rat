@@ -1,9 +1,6 @@
 /// @description Persistent Manager
 
 global.game_over = false;
-
-////play background music
-//audio_play_sound(mouse_house_bgm, 100, true, 0.3);
 	
 global.isFullscreen = false;
 
@@ -25,6 +22,7 @@ global.combination = [0, 0, 0];
 // to do but I couldn't find another way and I'm tired.
 global.grapple_is_going_up = true;
 global.grapple_is_first_time_outside = true;
+global.grapple_is_first_time_in_hallway = true;
 
 
 // Cursor setup
@@ -38,6 +36,6 @@ cursor_sprite = spr_cursor;
 global.fnt_symbol_note = "\u0153";
 global.fnt_symbol_heart = "\u0152";
 
-global.room_start_x_location = 300;
-global.room_start_y_location = 300;
+global.room_start_x_location = 200;
+global.room_start_y_location = 128;
 global.room_start_facing_left = false;

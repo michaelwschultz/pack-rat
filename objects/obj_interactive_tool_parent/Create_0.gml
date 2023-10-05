@@ -3,4 +3,6 @@
 // Inherit the parent event
 event_inherited();
 
-item = global.inventory_list.hammer;
+if (global.inventory_list) {
+	item = global.inventory_list.hammer;
+}

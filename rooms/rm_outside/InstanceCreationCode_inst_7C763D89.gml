@@ -1,6 +1,6 @@
 item = global.inventory_list.hammer;
 
-if (array_contains(global.picked_up_items, item.name)) {
+if (array_contains(obj_inventory_manager.inventory, item)) {
 	instance_destroy();	
 }
 

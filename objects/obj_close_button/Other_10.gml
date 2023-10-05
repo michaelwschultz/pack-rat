@@ -1,3 +1,5 @@
 /// @description Insert description here
 
-do_something()
+if (layer_get_visible(layer)) {
+	do_something()
+}

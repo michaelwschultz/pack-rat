@@ -16,7 +16,7 @@ var aspect = display_get_width() / display_get_height();
 
 //  temp screen adjustment // ***********************
 // TODO: change to 1 before submitting to itch
-var scale_factor = 3; // Change this to 4 for 1440p or 6 for michael's monitor
+var scale_factor = 2; // Change this to 4 for 1440p or 6 for michael's monitor
 var target_width = base_w * scale_factor;
 var target_height = base_h * scale_factor;
 

@@ -4,4 +4,7 @@
 /*
 	Overwrite this event in the child objects and add the code you want to run when the interactive object is clicked.
 */
-run_interaction()
+
+if (layer_get_visible(layer)) {
+	run_interaction()
+}
