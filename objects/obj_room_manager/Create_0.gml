@@ -10,9 +10,9 @@
 mouse_clear(mb_left)
 
 // Scaling game resolution
-var base_w = 640; // 640
-var base_h = 360; // 360
-var aspect = display_get_width() / display_get_height();
+base_w = 640; // 640
+base_h = 360; // 360
+aspect = display_get_width() / display_get_height();
 
 //  temp screen adjustment // ***********************
 // TODO: change to 1 before submitting to itch
@@ -28,10 +28,7 @@ window_set_size(target_width, target_height);
 // Adjust the application surface size
 surface_resize(application_surface, target_width, target_height);
 
-if (aspect > 1) {
-	// landscape
-    display_set_gui_size(base_h * aspect, base_h);
-} else {
-    // portrait
-    display_set_gui_size(base_w, base_w / aspect);
-}
+// set GUI size
+var _vx = camera_get_view_width(view_camera[0]);
+var _vy = camera_get_view_height(view_camera[0]);
+display_set_gui_size(_vx, _vy);

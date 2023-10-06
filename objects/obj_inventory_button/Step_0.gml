@@ -2,8 +2,18 @@
 
 move_distance = starting_position - distance_to_apply;
 
-obj_inventory.y = move_distance;
-obj_inventory_slot.y = move_distance + 15;
+if (object_exists(obj_inventory)) {
+	with(obj_inventory) {
+		// "other" here is this instance, (obj_inventory_button)
+		y = other.move_distance;
+	}
+}
+
+if (object_exists(obj_inventory_slot)) {
+	with(obj_inventory_slot) {
+		y = other.move_distance + 15;
+	}
+}
 
 distance_to_apply = lerp(distance_to_apply,  distance, slide_speed)
 

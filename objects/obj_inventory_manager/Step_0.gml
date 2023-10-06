@@ -1,5 +1,5 @@
 /// @description Insert description here
-if (!object_exists(obj_inventory_button) or global.game_over) {
+if (global.game_over or !object_exists(obj_inventory_button)) {
 	exit;
 }
 
@@ -7,7 +7,7 @@ selected_item = -1;
 for (var i = 0; i < array_length(inventory); i++) {
 	var _xx = item_start_y_position;
 	//var _yy = room_height - average_item_height - screen_border; 
-	var _yy = object_exists(obj_inventory_button) && obj_inventory_button.move_distance + 15;
+	var _yy = obj_inventory_button.move_distance + 15;
 	
 	// add a gap after the first item
 	if (i > 0) {
