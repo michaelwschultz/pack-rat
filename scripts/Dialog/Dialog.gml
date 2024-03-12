@@ -2,6 +2,10 @@ function Dialog() constructor {
 	
 	_dialogs = [];
 	
+	/// @param {asset.GMSprite} _sprite
+	/// @param {string} _message
+	/// @param {function} [_first_action]
+	/// @param {function} [_second_action]
 	add = function(_sprite, _message, _first_action, _second_action) {
 		array_push(_dialogs, {
 			sprite: _sprite,
@@ -21,5 +25,4 @@ function Dialog() constructor {
 	count = function() {
 		return array_length(_dialogs);
 	}
-
 }

@@ -6,7 +6,10 @@ key_next = mb_left;
 
 showing_dialog = false;
 
-current_dialog = {};
+current_dialog = {
+	message: "",
+	sprite: undefined,
+};
 
 alpha = 0;
 

@@ -1,5 +1,3 @@
-event_inherited()
-
 item = global.inventory_list.grapple;
 
 function run_interaction() {

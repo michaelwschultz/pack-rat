@@ -15,14 +15,14 @@ function unlock_movement()
 }
 
 /// @description Draw text with an outline
-/// @param {num} _x
-/// @param {num} _y
+/// @param {real} _x
+/// @param {real} _y
 /// @param {string} _string
-/// @param {num} _xscale
-/// @param {num} _yscale
-/// @param {num} _angle
-/// @param {col} _outline_color
-/// @param {col} _string_color
+/// @param {real} _xscale
+/// @param {real} _yscale
+/// @param {real} _angle
+/// @param {Constant.Color} _outline_color
+/// @param {Constant.Color} _string_color
 function draw_text_transformed_outlined(_x, _y, _string, _xscale, _yscale, _angle, _outline_color, _string_color)
 {	
 	// Set the color for the outline first

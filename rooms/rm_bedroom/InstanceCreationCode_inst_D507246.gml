@@ -1,5 +1,3 @@
-event_inherited()
-
 function run_interaction() {
 	lock_movement()
 	

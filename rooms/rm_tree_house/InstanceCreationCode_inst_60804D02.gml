@@ -1,5 +1,3 @@
-event_inherited()
-
 gundam_head = global.inventory_list.gundam_head;
 key = global.inventory_list.key;
 

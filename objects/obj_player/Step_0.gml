@@ -13,6 +13,9 @@ if (
 	
 	set_player_walk();
 	// Determine next step after each step to navigate around obj_obstacle children
+	
+	// Internal GM typing is wrong
+	// @feather ignore GM1041 once
 	mp_potential_step_object(mouse_x, mouse_y, movement_speed, obj_obstacle_parent);
 } else {
 	set_player_idle();

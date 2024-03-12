@@ -1,5 +1,5 @@
 {
-  "FolderOrderSettings": [
+  "FolderOrderSettings":[
     {"name":"Animation Curves","order":11,"path":"folders/Animation Curves.yy",},
     {"name":"Fonts","order":6,"path":"folders/Fonts.yy",},
     {"name":"Objects","order":8,"path":"folders/Objects.yy",},
@@ -26,7 +26,7 @@
     {"name":"Inventory","order":9,"path":"folders/Sprites/Inventory.yy",},
     {"name":"Player","order":5,"path":"folders/Sprites/Player.yy",},
   ],
-  "ResourceOrderSettings": [
+  "ResourceOrderSettings":[
     {"name":"spr_inventory_slot","order":2,"path":"sprites/spr_inventory_slot/spr_inventory_slot.yy",},
     {"name":"spr_avatar","order":3,"path":"sprites/spr_avatar/spr_avatar.yy",},
     {"name":"obj_obstacle_parent","order":1,"path":"objects/obj_obstacle_parent/obj_obstacle_parent.yy",},

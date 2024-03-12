@@ -1,5 +1,3 @@
-event_inherited()
-
 note = global.notes_list.two;
 
 function run_interaction() {

@@ -1,5 +1,3 @@
-event_inherited()
-
 function run_interaction() {
 	var note = global.notes_list.four;
 	lock_movement();

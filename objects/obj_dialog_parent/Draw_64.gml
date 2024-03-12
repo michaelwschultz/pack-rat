@@ -46,11 +46,11 @@ if(showing_dialog == true) {
 		current_dialog.first_action();
 		
 	} else {
+		// Get the width of each option
+		var first_option = "climb";
+		var first_option_width = string_width(first_option);
+		
 		if (current_dialog.first_action) {
-			// Get the width of each option
-			var first_option = "climb";
-			var first_option_width = string_width(first_option);
-	
 			// Check if the mouse is hoving over each option
 			var is_hovering_first_option = point_in_rectangle(mx, my, text_x,  text_y + 35, text_x + first_option_width,  text_y + 60);
 	
