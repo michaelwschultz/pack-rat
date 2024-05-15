@@ -16,6 +16,7 @@ Pack Rat was made during the [Cozy Authmn Game Jam 2023](https://itch.io/jam/coz
 
 ## Credits
 Game designed and built by [ratrace.studio](https://ratrace.studio)
-Design by Luke - [luketns.com](http://luketns.com)
-Code by Michael - [michaelschultz.com](http://michaelschultz.com)
 
+Design by Luke - [luketns.com](http://luketns.com)
+
+Code by Michael - [michaelschultz.com](http://michaelschultz.com)
